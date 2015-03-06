@@ -1,0 +1,7 @@
+package main;
+
+public class Treatment {
+	private String name;
+	private String currency = "USD";
+	private double price = 0;
+}

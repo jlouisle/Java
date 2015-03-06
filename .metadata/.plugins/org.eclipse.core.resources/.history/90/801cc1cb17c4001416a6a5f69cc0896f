@@ -1,0 +1,10 @@
+package main;
+
+public class Person {
+	
+	private String first_name;
+	private String last_name;
+	private String address;
+	private Animal[] animals;
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;aTy&apos; in &apos;main.Animal&apos; to &apos;anTy&apos;&#x0D;&#x0A;- Original project: &apos;559942-ExamOOP2-2014-term1-Le&apos;&#x0D;&#x0A;- Original element: &apos;main.Animal.aTy&apos;&#x0D;&#x0A;- Renamed element: &apos;main.Animal.anTy&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;aTy&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;main{Animal.java[Animal^aTy" name="anTy" references="true" setter="false" stamp="1425655506795" textual="false" version="1.0"/>
+</session>
