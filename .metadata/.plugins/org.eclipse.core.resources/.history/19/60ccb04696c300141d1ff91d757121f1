@@ -1,0 +1,7 @@
+
+public class Route {
+	private static City[] allCities = new City[5];
+	public static void main(String[] args) {
+		
+	}
+}

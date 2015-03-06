@@ -1,0 +1,9 @@
+
+public class Route {
+	private static City[] allCities = new City[5];
+
+	
+	
+	
+	
+}
