@@ -1,0 +1,17 @@
+package controller;
+
+import utility.AnimalType;
+import model.Animal;
+
+public class MainApp {
+	public static Animal[] pettingZoo = new Animal[3];
+	
+	public static void main(String[] args) {
+		pettingZoo[0] = new Animal("Bella 1",10000,AnimalType.COW);
+		pettingZoo[1] = new Animal("Bella 2",10000,AnimalType.COW);
+		pettingZoo[2] = new Animal("Hunter",10000,AnimalType.CAT);
+		pettingZoo[2] = new Animal("Fluffy",10000,AnimalType.RABBIT);
+		pettingZoo[2] = new Animal("Blackie",10000,AnimalType.DOG);
+	}
+	
+}

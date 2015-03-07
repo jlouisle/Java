@@ -1,0 +1,17 @@
+package utility;
+
+public enum AnimalType {
+	CAT			(true),
+	DOG			(true),
+	RABBIT		(true),
+	HAMSTER		(true),
+	GUINEA_PIG	(true),
+	COW 		(false),
+	SHEEP		(false),
+	PIG 		(false),
+	HORSE 		(false);
+	
+	private AnimalType(boolean pet) {
+	}
+	
+}

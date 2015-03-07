@@ -1,8 +1,0 @@
-package main;
-
-public class Animal {
-	private String name;
-	private int weight;
-	private AnimalType v;
-
-}

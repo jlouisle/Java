@@ -1,0 +1,12 @@
+package controller;
+
+import model.Animal;
+
+public class MainApp {
+	private static Animal[] pettingZoo;
+	
+	pettingZoo = new Animal[2];
+	
+	pettingZoo[0] = new Animal("Bella 1",10000,COW);
+	
+}

@@ -1,0 +1,10 @@
+package main;
+
+import model.Animal;
+
+public class CopyOfMainApp {
+	private Animal[] pettingZoo;
+	public static void main(String[] args) {
+	
+	}
+}
