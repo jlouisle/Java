@@ -11,7 +11,14 @@ public enum AnimalType {
 	PIG 		(false),
 	HORSE 		(false);
 	
+	private boolean pet;
+	
 	private AnimalType(boolean pet) {
+		this.pet = pet;
+	}
+
+	public boolean isPet() {
+		return pet;
 	}
 	
 }

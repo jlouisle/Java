@@ -7,9 +7,13 @@
 <fullyQualifiedTypeName name="main.insuranceCompany"/>
 <fullyQualifiedTypeName name="java.util.Currency"/>
 <fullyQualifiedTypeName name="utility.Sellable"/>
-<fullyQualifiedTypeName name="model.Animal"/>
-<fullyQualifiedTypeName name="model.Treatment"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="model.Person"/>
 <fullyQualifiedTypeName name="utility.AnimalType"/>
+<fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+<fullyQualifiedTypeName name="model.Pet"/>
+<fullyQualifiedTypeName name="model.Animal"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="utility.insuranceCompany"/>
+<fullyQualifiedTypeName name="model.Treatment"/>
 </qualifiedTypeNameHistroy>

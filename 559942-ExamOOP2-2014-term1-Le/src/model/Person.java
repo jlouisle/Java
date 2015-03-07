@@ -22,36 +22,29 @@ public class Person {
 	public void deleteAnimal(int index){
 		animals.remove(index);
 	}
-	
-	public String getFirst_name() {
-		return first_name;
-	}
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
-	}
-	public String getLast_name() {
-		return last_name;
-	}
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
+
+	public String toString() {
+		return first_name + " " + last_name + " has animals:\n" + getAnimals();
 	}
 	public String getAnimals() {
 		String xt="";
 		for(Animal x: animals)
-			xt += x.toString();
-		return xt;
+			xt += x.toString() + "\n";
+		return xt + "\n";
+	}
+	
+	public String getName() {
+		return first_name + " " +  last_name;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public void setAddress(String address) {
+		this.address = address;
 	}
 
-	@Override
-	public String toString() {
-		return first_name + " " + last_name + " has animals: " + getAnimals();
-	}
 	
 	
 	

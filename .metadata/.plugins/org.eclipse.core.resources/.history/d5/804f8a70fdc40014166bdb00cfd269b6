@@ -1,0 +1,43 @@
+package model;
+
+import utility.AnimalType;
+import utility.insuranceCompany;
+
+public class Pet extends Animal{
+	private insuranceCompany inCo;
+	private String insuranceNumber;
+	
+	public final int MAXIMUM_HEIGHT = 25;
+	
+	
+	
+	
+	
+	
+	public Pet(insuranceCompany inCo, String insuranceNumber,String name, int weight, AnimalType anTy) {
+		super(name, weight, anTy);
+		this.inCo = inCo;
+		this.insuranceNumber = insuranceNumber;
+		if((this.inCo.equals(null) && this.insuranceNumber!= null) && ||this.insuranceNumber.equals(null)){
+			
+		}
+	}
+	
+	
+	
+	public insuranceCompany getInCo() {
+		return inCo;
+	}
+	public void setInCo(insuranceCompany inCo) {
+		this.inCo = inCo;
+	}
+	
+	public String getInsuranceNumber() {
+		return insuranceNumber;
+	}
+	public void setInsuranceNumber(String insuranceNumber) {
+		this.insuranceNumber = insuranceNumber;
+	}
+	
+	
+}

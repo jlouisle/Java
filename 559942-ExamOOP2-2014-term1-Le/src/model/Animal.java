@@ -6,12 +6,14 @@ import utility.AnimalType;
 
 public class Animal implements Sellable {
 	
+	
+	//Attributes
 	private String name;
 	private int weight;
 	private AnimalType anTy;
-
+	
+	//Treatments
 	private ArrayList<Treatment> treatments = new ArrayList<Treatment>();
-	private String currency = "USD";
 
 	//Constructor
 	public Animal(String name, int weight, AnimalType v) {
@@ -20,23 +22,59 @@ public class Animal implements Sellable {
 		this.weight = weight;
 		this.anTy = v;
 	}
-
-	public double getPrice() {
-		double tPrice = 0;
-		for (Treatment x: treatments)
-			tPrice += x.getPrice();
-		if(tPrice < 0)
-			throw new IllegalStateException("Animal has a treatment costing less than zero; cannot be!");
-		return tPrice;
+	
+	//Print out
+	public String toString() {
+		return anTy + " " + name + "(price: " + getPrice() + " " + currency + ")";
 	}
 	
-	@Override
-	public String toString() {
-		return anTy + " " + name + ", price: " + getPrice() + " " + currency;
-	}
+	//Add treatment
 	public void addTreatment(Treatment n){
 		treatments.add(n);
 	}
+
+	//Return Price
+	public double getPrice() {
+		double tPrice = 0;
+		
+		for (Treatment x: treatments)
+			tPrice += x.getPrice();
+		
+		if(tPrice < 0)
+			throw new IllegalStateException("Animal has a treatment costing less than zero; cannot be!");
+		
+		return tPrice;
+	}
+	
+	//Price + Currency
+	public String getPriceAndCurrency() {
+		return String.valueOf(getPrice()) + " " + currency;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	private String currency = "USD";
+
+
 	public String getName() {
 		return name;
 	}
