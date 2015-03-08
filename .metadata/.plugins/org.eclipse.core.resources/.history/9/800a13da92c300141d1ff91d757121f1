@@ -1,5 +1,0 @@
-
-public class Route {
-	private City[] allCities;
-	City allCities[] = new City();
-}

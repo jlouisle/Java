@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;05 - Static and non-static/src/ex1&apos;&#x0D;&#x0A;- Original project: &apos;W5_01 Rectangle&apos;&#x0D;&#x0A;- Destination element: &apos;05 - Static and non-static/src/ex1&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     TestRectangle.java&#x0D;&#x0A;     Rectangle.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=05 - Static and non-static/src&lt;ex1" element1="/src&lt;{TestRectangle.java" element2="/src&lt;{Rectangle.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1425845600826" units="2" version="1.0"/>
+</session>

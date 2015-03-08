@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 2 elements to &apos;06 - Inheritance/src/ex1&apos;&#x0D;&#x0A;- Original project: &apos;W6_01 Employees&apos;&#x0D;&#x0A;- Destination element: &apos;06 - Inheritance/src/ex1&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Employee.java&#x0D;&#x0A;     Manager.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=06 - Inheritance/src&lt;ex1" element1="/src&lt;{Employee.java" element2="/src&lt;{Manager.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1425845613529" units="2" version="1.0"/>
+</session>

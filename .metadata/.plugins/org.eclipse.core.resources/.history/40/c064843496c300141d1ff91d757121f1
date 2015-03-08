@@ -1,8 +1,0 @@
-
-public class Route {
-	private static City[] allCities;
-	public static void main(String[] args) {
-		
-	}
-	allCities = new City[5];
-}
