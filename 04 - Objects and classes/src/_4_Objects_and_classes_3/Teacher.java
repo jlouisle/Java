@@ -13,5 +13,11 @@ public class Teacher {
 	public void removeCourse(Course aCourse){
 		
 	}
+	public Course[] getCourses() {
+		return courses;
+	}
+	public void setCourses(Course[] courses) {
+		this.courses = courses;
+	}
 	
 }

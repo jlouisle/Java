@@ -32,7 +32,7 @@ public class MainApp {
 		addTreatment(animals.get(4), treatments.get(2));
 		System.out.println(h1.toString());;
 		remTreatment(animals.get(4), treatments.get(3));
-		System.out.println(h1.toString());;
+		System.out.println(h1.toString());
 	}
 	
 	//Arrays

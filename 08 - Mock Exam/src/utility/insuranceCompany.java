@@ -4,6 +4,4 @@ public enum insuranceCompany {
 	ONE	 	(),
 	TWO	 	(),
 	THREE	();
-	
-	
 }
