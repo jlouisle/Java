@@ -1,0 +1,10 @@
+package ex2;
+
+public class HourlyWorker extends Worker{
+
+
+	public int computePay(int hours) {
+		return hours * this.getSalary();
+	}
+	
+}

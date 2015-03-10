@@ -1,0 +1,46 @@
+package ex3;
+
+public class Duck {
+	
+	
+	
+	
+	
+	
+	
+	
+	public void quack(){
+		System.out.println("Quack!");
+	}	
+	public void swim(){
+		System.out.println("*swims*");
+	}	
+	public void show(){
+		System.out.println(this.getClass());
+	}
+	public void fly(){
+		System.out.println("Flap.");
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+/*
+Write a class Duck with methods quack, swim and how.
+Define subclasses WildDuck and TameDuck, who both redefine
+the show method. Write neccesary methods for debugging and 
+'programming best practices'.
+Write a class DuckTest to show the results of some testing.
+Add a method fly. Adapt the tests.
+Write a new class RubberDuck. Of course this one can be shown
+as well, and it does quack. Then write a new class WoodenDucj,
+inheriting from Duck, but who cannot quack. In all cases, adapt
+the test methods.*/

@@ -6,8 +6,11 @@ public class Rectangle {
 	//private String name;
 	private int width;
 	private int height;
-	private Color color = Color.BLUE;
-	private static int counter = 0;
+	private Color color;
+	private static int counter;
+	
+	{color = Color.BLUE;}
+	static{counter = 0;}
 	
 	
 	

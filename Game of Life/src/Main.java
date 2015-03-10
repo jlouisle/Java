@@ -1,5 +1,4 @@
 import java.awt.BorderLayout;
-
 import javax.swing.JFrame;
 
 public class Main {
@@ -8,7 +7,7 @@ public class Main {
 		GameOfLife gol = new GameOfLife();
 		
 		JFrame frame = new JFrame("Conway's Game of Life");
-		frame.setUndecorated(true);
+		frame.setUndecorated(false);
 		frame.setSize(1280, 800);
 		frame.setPreferredSize(frame.getSize());
 		frame.setLocationRelativeTo(null);
@@ -19,10 +18,10 @@ public class Main {
 		
 		frame.setVisible(true);
 		
-		gol.TILESIZE = 10;
+		gol.setTilesize(10);
 		
-		gol.width = 1280;
-		gol.height = 800;
+		gol.setWidth(1280);
+		gol.setHeight(800);
 		
 		gol.start();
 	}

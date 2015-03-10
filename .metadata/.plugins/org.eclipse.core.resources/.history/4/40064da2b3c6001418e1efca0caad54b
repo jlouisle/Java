@@ -1,0 +1,7 @@
+
+public class GuidedUI {
+	private JFrame f;
+	private JPanel p;
+	private JButton b1;
+	private JLabel lab;
+}

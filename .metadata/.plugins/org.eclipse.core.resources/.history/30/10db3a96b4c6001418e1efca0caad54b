@@ -1,0 +1,20 @@
+import javax.swing.*;
+
+
+public class GuidedUI {
+	private JFrame f;
+	private JPanel p;
+	private JButton b1;
+	private JLabel lab;
+	
+	public GuidedUI() {
+		gui();
+	}
+	
+	public void gui(){
+		f = new JFrame("F");
+		f.setVisible(true);
+		f.setSize(600, 400);
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+}

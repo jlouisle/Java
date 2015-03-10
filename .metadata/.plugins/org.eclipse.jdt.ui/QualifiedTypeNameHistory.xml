@@ -17,4 +17,17 @@
 <fullyQualifiedTypeName name="utility.insuranceCompany"/>
 <fullyQualifiedTypeName name="model.Treatment"/>
 <fullyQualifiedTypeName name="javax.sound.sampled.ReverbType"/>
+<fullyQualifiedTypeName name="javax.swing.JFrame"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="GuidedUI"/>
+<fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+<fullyQualifiedTypeName name="ex2.HourlyWorker"/>
+<fullyQualifiedTypeName name="ex2.Worker"/>
+<fullyQualifiedTypeName name="ex3.Duck"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="ex3.TameDuck"/>
+<fullyQualifiedTypeName name="ex3.RubberDuck"/>
+<fullyQualifiedTypeName name="ex3.WildDuck"/>
+<fullyQualifiedTypeName name="ex3.WoodenDuck"/>
 </qualifiedTypeNameHistroy>

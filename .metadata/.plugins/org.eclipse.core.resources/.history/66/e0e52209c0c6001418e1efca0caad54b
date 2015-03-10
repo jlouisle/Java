@@ -1,0 +1,15 @@
+package ex2;
+
+public class HourlyWorker extends Worker{
+
+
+	public int computePay(int hours) {
+		int wp = hours * this.getSalary();
+		if(hours>40){
+			int overhours = hours - 40
+		}
+		 
+		 return
+	}
+	
+}

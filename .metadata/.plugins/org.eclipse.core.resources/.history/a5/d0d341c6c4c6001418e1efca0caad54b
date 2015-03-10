@@ -1,0 +1,16 @@
+package ex3;
+
+public class DuckTest {
+	static Duck a = new Duck();
+	WildDuck b = new WildDuck();
+	TameDuck c = new TameDuck();
+	RubberDuck d = new RubberDuck();
+	WoodenDuck e = new WoodenDuck();
+	public static void main(String[] args) {
+		a.quack();
+		b.quack();
+		c.quack();
+		d.quack();
+		e.quack();
+	}
+}

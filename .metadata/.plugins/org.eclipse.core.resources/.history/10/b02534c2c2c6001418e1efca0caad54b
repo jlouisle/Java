@@ -1,0 +1,10 @@
+package ex2;
+
+public class Controller {
+	public static void main(String[] args) {
+		HourlyWorker j = new HourlyWorker();
+		j.setName("Jay");
+		j.setSalary(25);
+		((Object) System.out).fprintf("%s's weekly income is %f USD.",j.getName(),j.computePay(80));
+	}
+}

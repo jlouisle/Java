@@ -1,0 +1,12 @@
+package ex3;
+
+public class DuckTest {
+	Duck a = new Duck();
+	WildDuck b = new WildDuck();
+	TameDuck c = new TameDuck();
+	RubberDuck d = new RubberDuck();
+	WoodenDuck e = new WoodenDuck();
+	
+	a.(
+			);
+}

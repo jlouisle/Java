@@ -1,0 +1,13 @@
+package ex3;
+
+public class RubberDuck {
+
+	
+	public void quack(){
+		
+	}
+	public void show(){
+		
+	}
+		
+}
