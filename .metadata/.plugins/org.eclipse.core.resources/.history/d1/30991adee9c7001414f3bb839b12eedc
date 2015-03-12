@@ -1,0 +1,15 @@
+package model.fox;
+
+import java.awt.Color;
+import java.util.concurrent.CyclicBarrier;
+import model.Animal;
+import model.AnimalBehaviourStrategy;
+import model.Location;
+import controller.Area;
+
+public abstract class Fox extends Animal {
+	
+	
+	
+	
+}

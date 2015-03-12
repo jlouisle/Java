@@ -1,4 +1,5 @@
 package model;
+import java.security.InvalidParameterException;
 import java.util.ArrayList;
 
 import utility.Sellable;
@@ -11,6 +12,11 @@ public class Animal implements Sellable {
 	private String name;
 	private int weight;
 	private AnimalType anTy;
+	
+	//Errors
+	public InvalidParameterException error1 = new InvalidParameterException("No insurance company added.");
+	public InvalidParameterException error2 = new InvalidParameterException("No insurance number added.");
+	public IllegalStateException error3 = new IllegalStateException("Animal has a treatment costing less than zero; cannot be!");
 	
 	//Treatments
 	private ArrayList<Treatment> treatments = new ArrayList<Treatment>();
@@ -41,7 +47,7 @@ public class Animal implements Sellable {
 			tPrice += x.getPrice();
 		
 		if(tPrice < 0)
-			throw new IllegalStateException("Animal has a treatment costing less than zero; cannot be!");
+			throw error3;
 		
 		return tPrice;
 	}

@@ -1,0 +1,31 @@
+package model.fox;
+
+import model.AnimalBehaviourStrategy;
+
+public class FoxBehaviour implements AnimalBehaviourStrategy {
+
+	@Override
+	public Animal[] reproduce(Animal partner) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void move() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getMaxAge() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public void setAnimal(Animal animal) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

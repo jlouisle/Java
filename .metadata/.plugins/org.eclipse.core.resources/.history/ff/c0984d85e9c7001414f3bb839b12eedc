@@ -1,0 +1,19 @@
+package model.fox;
+
+import java.awt.Color;
+import java.util.concurrent.CyclicBarrier;
+
+import model.Animal;
+import model.AnimalBehaviourStrategy;
+import model.Location;
+import controller.Area;
+
+public class Fox extends Animal {
+	public Fox(Area area, CyclicBarrier synchronizationBarrier,
+			Location startLocation, Gender gender, Color drawingColor,
+			AnimalBehaviourStrategy behaviour) {
+		super(area, synchronizationBarrier, startLocation, gender, drawingColor,
+				behaviour);
+		// TODO Auto-generated constructor st
+	}
+}
