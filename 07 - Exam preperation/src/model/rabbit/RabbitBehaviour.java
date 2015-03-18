@@ -45,7 +45,7 @@ public class RabbitBehaviour implements AnimalBehaviourStrategy {
 					
 				}
 			}
-			rabbit.getLocation().move(deltaX, deltaY);
+			rabbit.getLocation().move(3, 3);
 		}
 	}
 

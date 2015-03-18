@@ -5,3 +5,5 @@
 1426076998525	Rename package 'model.fox2'
 1426077010183	Rename type 'Rabbit'
 1426077029579	Rename type 'RabbitBehaviour'
+1426153560054	Rename local variable 'nearestPartner'
+1426156460769	Move package

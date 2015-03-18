@@ -32,4 +32,7 @@
 <fullyQualifiedTypeName name="model.Animal"/>
 <fullyQualifiedTypeName name="java.security.InvalidParameterException"/>
 <fullyQualifiedTypeName name="java.lang.IllegalStateException"/>
+<fullyQualifiedTypeName name="model.fox.Fox"/>
+<fullyQualifiedTypeName name="model.rabbit.Rabbit"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
 </qualifiedTypeNameHistroy>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
 <workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1425845214281_2" label="Exercises" name="Exercises">
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/05 - Static and non-static" type="4"/>
+<item elementID="=05 - Static and non-static" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=07 - Exam preperation" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/02 - Basics of Java syntax" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/03 - More on Java syntax" type="4"/>
+<item elementID="=02 - Basics of Java syntax" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=03 - More on Java syntax" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/06 - Inheritance" type="4"/>
-<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/04 - Objects and classes" type="4"/>
+<item elementID="=04 - Objects and classes" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=08 - Mock Exam" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1425594564609_0" label="Window Working Set" name="Aggregate for window 1425594564608"/>

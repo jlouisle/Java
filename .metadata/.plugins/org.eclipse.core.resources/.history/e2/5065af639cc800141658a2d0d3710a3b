@@ -1,0 +1,139 @@
+package model;
+
+import java.awt.Color;
+import java.util.List;
+import java.util.concurrent.CyclicBarrier;
+
+import model.fox.Fox;
+import controller.Area;
+
+public abstract class Animal {
+	private Thread innerThread;
+	protected CyclicBarrier synchronizationBarrier;
+	private final Location location;
+	private final int maxAgeInDays;
+	protected volatile boolean isAlive = false;
+	private Color drawingColor;
+	private final Gender gender;
+	private int currentAgeInDays;
+	private Area area;
+	private final double id;
+	protected AnimalBehaviourStrategy behaviour;
+	
+	public Animal(Area area, CyclicBarrier synchronizationBarrier, Location startLocation, Gender gender, Color drawingColor, AnimalBehaviourStrategy behaviour) {
+		this.location = startLocation;
+		this.drawingColor = drawingColor;
+		this.synchronizationBarrier = synchronizationBarrier;
+		this.gender = gender;
+		currentAgeInDays = 0;
+		this.area = area;
+		this.behaviour = behaviour;
+		behaviour.setAnimal(this);
+		this.maxAgeInDays = getMaxAge();
+		id =  Math.random() * Constants.ID_RANGE;
+		Runnable r = new Runnable() {
+
+			@Override
+			public void run() {
+				live();
+				
+			}
+		};
+		innerThread =new Thread(r);
+		isAlive = true;
+		innerThread.start();
+	}
+	
+	public Location getLocation() {
+		return location;
+	}
+	
+	public void move(int deltaX, int deltaY) {
+		location.move(deltaX, deltaY);
+	}
+	
+	public int getMaxAgeInDays() {
+		return maxAgeInDays;
+	}
+
+	public Color getDrawingColor() {
+		return drawingColor;
+	}
+
+	public void setDrawingColor(Color drawingColor) {
+		this.drawingColor = drawingColor;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public int getCurrentAgeInDays() {
+		return currentAgeInDays;
+	}
+	
+	public Area getArea() {
+		return area;
+	}
+
+	public void age() {
+		currentAgeInDays++;
+		if (currentAgeInDays >= maxAgeInDays) {
+			die();
+		}
+	}
+
+	@Override
+	public String toString() {
+		return "Animal [isAlive=" + isAlive + ", gender=" + gender
+				+ ", currentAgeInDays=" + currentAgeInDays + ", id=" + id + "]";
+	}
+
+	public double getId() {
+		return id;
+	}
+	
+	public synchronized void die() {
+		isAlive = false;
+		area.remove(this); // Shortcut. To be done: add a thread to simulate rotting and stuff like that, which removes the dead animal.
+	}
+	
+	public Animal getClosestDifferentSex() {
+		long smallestDistance = Constants.AREA_SIZE * Constants.AREA_SIZE;
+		Animal result = null;
+		List<Animal> animals = area.getAnimals();
+		for (Animal other: animals) {
+			if (other != this) {
+				if (this.getGender() != other.getGender()) {
+					if (smallestDistance > this.getLocation().getDistance(other.getLocation())) {
+						smallestDistance = this.getLocation().getDistance(other.getLocation());
+						result = other;
+					}
+				}
+			}
+		}
+		return result;
+	}
+	
+	public Animal getClosestRabbit() {
+		long smallestDistance = Constants.AREA_SIZE * Constants.AREA_SIZE;
+		Animal result = null;
+		List<Animal> animals = area.getAnimals();
+		for (Animal other: animals) {
+			if (other != this && (Fox) other.getClass != this.getClass()) {
+				if (smallestDistance > this.getLocation().getDistance(other.getLocation())) {
+					smallestDistance = this.getLocation().getDistance(other.getLocation());
+					result = other;
+				}
+			}
+		}
+		return result;
+	}
+
+	public abstract void live(); // Do all work needed while living
+	public abstract void reproduce(Animal partner); // Give back an array of children of these two animals
+	public abstract void move(); // Move the animal
+	public abstract int getMaxAge();
+	
+	public enum Gender { MALE, FEMALE }
+}

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 
 public class Controller {
-	
+
 	public static Student[] allStudents;
 	
 	public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class Controller {
 			allStudents[i] = new Student();
 		}
 		
-		System.out.printf("Total Age: %d",Student.allAges(x-1,x-1,allStudents));
+		System.out.printf("Total Age: %d",allStudents[x-1].allAges(x-1,x-1,allStudents));
 		usIn.close();
 	}
 }

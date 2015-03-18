@@ -18,6 +18,9 @@ public class Constants {
 	// Number of Rabbits to start with
 	public static final int NUMBER_OF_RABBITS = 100;
 	
+	// Number of Foxes to start with
+	public static final int NUMBER_OF_FOXES = 10;
+	
 	// Range of ids for Animals
 	public static final double ID_RANGE = 1000000000;
 	

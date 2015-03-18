@@ -1,7 +1,5 @@
 package model;
 
-import java.security.InvalidParameterException;
-
 import utility.AnimalType;
 import utility.insuranceCompany;
 

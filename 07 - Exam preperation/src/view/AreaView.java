@@ -23,7 +23,6 @@ public class AreaView implements Updateable {
 	private JTextField elapsedTimeField = new JTextField("Put some very long text here. You know, as in lots of characters.");
 	private JTextField numberOfAnimalsField = new JTextField("Put some very long text here. You know, as in lots of characters.");
 
-
 	/**
 	 * Launch the application.
 	 */
@@ -89,17 +88,24 @@ public class AreaView implements Updateable {
 			for (Animal animal: animals) {
 				int x = (int) (animal.getLocation().getX() / screenScalingFactor);
 				int y = (int) (animal.getLocation().getY() / screenScalingFactor);
-				drawRabbit(g, x,y,animal.getDrawingColor());
+				if (animal.getType() == "Rabbit"){
+					drawRabbit(g, x,y,animal.getDrawingColor());
+				}
+				else {
+					drawFox(g, x,y,animal.getDrawingColor());
+				}
 			}
-			setElapsedTime();
-			setNumberOfAnimals();
 		}
 		
 		private long getScreenScalingFactor() {
 			return (controller.getSize().getX() / AreaView.this.maxScreenSize);
 		}
-		
+
 		private void drawRabbit(Graphics g, int x, int y, Color drawingColor) {
+			g.setColor(drawingColor);
+			g.fillOval(x,  y,  5,  5);
+		}
+		private void drawFox(Graphics g, int x, int y, Color drawingColor) {
 			g.setColor(drawingColor);
 			g.fillOval(x,  y,  5,  5);
 		}

@@ -15,6 +15,10 @@ public class Rabbit extends Animal {
 		super(area, synchronizationBarrier, startLocation, (Math.random()> 0.5 ? Animal.Gender.MALE :  Animal.Gender.FEMALE), Color.RED, new RabbitBehaviour(area));
 	}
 
+	
+	{this.setType("Fox");}
+	
+	
 	@Override
 	public void live() {
 		int numberOfIterations = 0;

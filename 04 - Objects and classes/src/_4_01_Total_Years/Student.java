@@ -1,4 +1,7 @@
 package _4_01_Total_Years;
+
+import java.util.Date;
+
 public class Student {
 	
 	public static int created = 1;
@@ -19,8 +22,10 @@ public class Student {
 		return this.num;
 	}
 
+	
+	
 	//Own age + all before
-	public static int allAges(int x,int y,Student[] a){
+	public int allAges(int x,int y,Student[] a){
 		if(a[x].getNum() > 1){
 			System.out.printf("Student %d asking student %d.\n",x+1,x);
 			int r = a[x].getAge() + allAges(x-1,y,a);

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 2 elements from project &apos;PvP&apos;&#x0D;&#x0A;- Original project: &apos;PvP&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     PvP/src/model.rabbit&#x0D;&#x0A;     PvP/src/model.sub" description="Delete elements" element1="/src&lt;model.sub" element2="/src&lt;model" element3="/src&lt;model.rabbit" element4="/src&lt;model" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1426156110178" subPackages="false" version="1.0"/>
+</session>
